@@ -1,176 +1,61 @@
-<!-- FILEPATH: /F:/site/mooshieblob1.github.io/index.html -->
-<!-- FILEPATH: /c:/Users/moosh/site/mooshieblob1.github.io/index.html -->
-<!-- 
-    This is the HTML code for the index page of the Blob Portfolio website.
-    It includes a navigation bar, a container with thumbnail images, and modal popups for each image.
-    The page also has a footer with copyright information.
--->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Panju our beloved</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
-    <style>
-        body {
-            background-color: #181825;
-            color: #cdd6f4;
-        }
-
-        .img-thumbnail {
-            border-radius: 20px;
-            transition: transform 0.3s ease-in-out;
-            border-color: #313244;
-        }
-
-        .img-thumbnail:hover {
-            transform: scale(1.1);
-        }
-
-        .header {
-            background-color: #313244;
-            padding: 10px;
-            text-align: center;
-            color: #cdd6f4;
-        }
-
-        .footer-text {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            padding: 10px;
-            font-size: 12px;
-            color: #cdd6f4;
-            background-color: #313244;
-            width: 100%;
-            text-align: center;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-        }
-
-        .navbar-brand {
-            font-size: 1.5rem;
-        }
-
-        /* Media queries for responsive layout */
-        @media (max-width: 767px) {
-            .container {
-                padding: 0;
-            }
-
-            .col-md-4 {
-                margin-bottom: 20px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% page_title %}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  
+  <style>
+    .clock {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      font-family: Arial, sans-serif;
+      font-size: 14.2px; /* 20% smaller font size */
+      color: #FFCC00;
+    }
+  </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <img src="images\logo.png" alt="Blob" width="50" height="50">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container">
-        <h2>ANJU is great</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal1">
-                    <img src="https://cdn.aibooru.download/sample/32/3f/__original_generated_by_blob_artist_using_animaginexl_and_novelai__sample-323fd1c03b763762128ba8fb061591af.jpg" alt="Image 1" class="img-thumbnail" />
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal2">
-                    <img src="https://cdn.aibooru.download/sample/42/90/__pekomama_hololive_generated_by_blob_artist_using_animaginexl_and_novelai__sample-42900eddafed6765f485c10c1efa4470.jpg" alt="Image 2" class="img-thumbnail" />
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal3">
-                    <img src="https://cdn.aibooru.download/sample/57/b0/__original_generated_by_blob_artist_using_animaginexl_and_novelai__sample-57b0799105e70455163bea8f48755da7.jpg" alt="Image 3" class="img-thumbnail" />
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal4">
-                    <img src="https://cdn.aibooru.download/sample/12/bd/__original_generated_by_blob_artist_using_animaginexl_and_novelai__sample-12bd528e3c289e89c90691f1ff4a28e2.jpg" alt="Image 4" class="img-thumbnail" />
-                </a>
-            </div>
-        </div>
+  <div class="clock" id="clock"></div>
+  <div class="social-links">
+    <a href="https://aibooru.online/users/2949" target="_blank">
+      <img src="aibooru.png" alt="AIBooru">
+    </a>
+    <a href="https://x.com/mooshieblob" target="_blank">
+      <img src="x.png" alt="X">
+    </a>
+    <a href="https://github.com/Mooshieblob1/" target="_blank">
+      <img src="github.png" alt="Github">
+    </a>
+  </div>
+  <div class="rain front-row"></div>
+  <div class="rain back-row"></div>
+  <footer style="background-color: #413400; padding: 10px;">
+    <div class="footer-text" style="padding: 0px 0;">
+      <div style="padding-right: 10px;">
+        &copy; 2024 Mooshieblob
+        <a href='https://iplocation.io/ipv6-compatibility-checker?url=referer' style="position: relative; top: 10px;">
+          <img src='https://iplocation.io/images/ipv6-non-validated.svg' alt='ipv6 ready' title='ipv6 ready' border="0" padding="0" width="64" height="32" />
+        </a>
+      </div>
     </div>
+  </footer>
 
-    <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModal1Label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img src="https://cdn.aibooru.download/sample/32/3f/__original_generated_by_blob_artist_using_animaginexl_and_novelai__sample-323fd1c03b763762128ba8fb061591af.jpg" alt="Image 1" class="img-fluid" />
-                </div>
-            </div>
-        </div>
-    </div>
+  <script>
+    function updateClock() {
+      var now = new Date();
+      var hours = now.getHours();
+      var minutes = now.getMinutes();
+      var seconds = now.getSeconds();
+      var timeString = hours.toString().padStart(2, '0') + ':' + minutes.toString().padStart(2, '0') + ':' + seconds.toString().padStart(2, '0');
+      document.getElementById('clock').textContent = timeString;
+    }
 
-    <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModal2Label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img src="https://cdn.aibooru.download/sample/42/90/__pekomama_hololive_generated_by_blob_artist_using_animaginexl_and_novelai__sample-42900eddafed6765f485c10c1efa4470.jpg" alt="Image 2" class="img-fluid" />
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="imageModal3" tabindex="-1" aria-labelledby="imageModal3Label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img src="https://cdn.aibooru.download/sample/57/b0/__original_generated_by_blob_artist_using_animaginexl_and_novelai__sample-57b0799105e70455163bea8f48755da7.jpg" alt="Image 3" class="img-fluid" />
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="imageModal4" tabindex="-1" aria-labelledby="imageModal4Label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img src="https://cdn.aibooru.download/sample/12/bd/__original_generated_by_blob_artist_using_animaginexl_and_novelai__sample-12bd528e3c289e89c90691f1ff4a28e2.jpg" alt="Image 4" class="img-fluid" />
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer-text" style="padding: 10px 0;">
-        <div style="padding-right: 10px;">
-            &copy; 2024 Mooshieblob <!-- https://iplocation.io/ button BEGIN -->
-            <a href='https://iplocation.io/ipv6-compatibility-checker?url=referer'>
-                <img src='https://iplocation.io/images/ipv6-non-validated.svg' alt='ipv6 ready' title='ipv6 ready' border="0" padding="8" width="64" height="64" />
-            </a>
-            <!-- https://iplocation.io/ button END -->
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    setInterval(updateClock, 1000);
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<script src="assets/js/script.js"></script>
 </html>
