@@ -5,23 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mooshieblob</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script>
-      function setExpireHeaders() {
-        var links = document.getElementsByTagName('link');
-        var scripts = document.getElementsByTagName('script');
-        var now = new Date();
-        now.setFullYear(now.getFullYear() + 1);
-        var expires = now.toUTCString();
-        for (var i = 0; i < links.length; i++) {
-          links[i].setAttribute('expires', expires);
-        }
-        for (var i = 0; i < scripts.length; i++) {
-          scripts[i].setAttribute('expires', expires);
-        }
-      }
-
-      setExpireHeaders();
-    </script>
   </head>
   <body class="back-row-toggle splat-toggle">
     <div class="clock" id="clock"></div>
