@@ -6,6 +6,7 @@
 .social-links {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   position: fixed;
   top: 50%;
@@ -27,7 +28,7 @@
 }
 
 body {
-  background-color: #1a1a1a;
+  background-color: #01030f;
   color: #FFFFFF;
   font-family: "Roboto", Arial, sans-serif;
 }
@@ -161,10 +162,13 @@ body.splat-toggle .splat {
   }
 }
 
-.social-links>a>img {
+.social-links a>img {
   height: 30px;
 }
-
+.social-links>img {
+  width: 250px;
+  margin-bottom: 20px;
+}
 #bg_girl {
   height: 90vh;
   position: fixed;
