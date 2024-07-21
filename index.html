@@ -9,30 +9,30 @@
 <body class="back-row-toggle splat-toggle">
   <div class="clock" id="clock"></div>
   <div class="social-links">
-    <a href="https://aibooru.online/users/2949" target="_blank">
-      <img src="aibooru.png" alt="AIBooru">
+    <a href="https://aibooru.online/users/2949"target="_blank">
+      <img src="/assets/icons/aibooru.svg" alt="AIBooru">
     </a>
     <a href="https://x.com/mooshieblob" target="_blank">
-      <img src="x.png" alt="X">
+      <img src="/assets/icons/x.svg" alt="X" style="height: 36px;">
     </a>
     <a href="https://github.com/Mooshieblob1/" target="_blank">
-      <img src="github.png" alt="Github">
+      <img src="/assets/icons/github.svg" alt="Github">
     </a>
   </div>
+
   <div class="rain front-row"></div>
   <div class="rain back-row"></div>
-  <footer style="background-color: #413400; padding: 10px;">
-    <div class="footer-text" style="padding: 0px 0;">
-      <div style="padding-right: 10px;">
-        &copy; 2024 Mooshieblob
-        <a href='https://iplocation.io/ipv6-compatibility-checker?url=referer' style="position: relative; top: 10px;">
-          <img src='https://iplocation.io/images/ipv6-non-validated.svg' alt='ipv6 ready' title='ipv6 ready' border="0" padding="0" width="64" height="32" />
+  <img src="/assets/images/bg.png" id="bg_girl">
+
+  <footer>
+    <div class="footer-text">
+        <span>&copy; 2024 Mooshieblob</span>
+        <a href='https://iplocation.io/ipv6-compatibility-checker?url=referer' id="ipv6">
+          <img src='https://iplocation.io/images/ipv6-non-validated.svg' alt='ipv6 ready' title='ipv6 ready' border="0" padding="0" width="36" height="18" />
         </a>
-      </div>
     </div>
   </footer>
-
-  <script>
+<script>
     function updateClock() {
       var now = new Date();
       var hours = now.getHours();
