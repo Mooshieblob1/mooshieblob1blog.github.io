@@ -24,7 +24,8 @@ body {
   background-color: #1a1a1a;
   color: #FFFFFF;
   font-family: "Roboto", Arial, sans-serif;
-  background-image: url(/images/bg.png);
+  background-image: url("/images/bg.png");
+
   background-repeat: no-repeat;
   background-size: auto 100vh;
   background-position: right top;
@@ -39,6 +40,14 @@ footer {
   color: #FFFFFF;
   text-align: center;
   padding: 10px 0;
+}
+.clock {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14.2px; /* 20% smaller font size */
+  color: #FFCC00;
 }
 
 .rain {
@@ -56,41 +65,8 @@ footer {
   opacity: 0.5;
 }
 
-.drop {
-  position: absolute;
-  bottom: 100%;
-  width: 15px;
-  height: 120px;
-  pointer-events: none;
-  animation: drop 0.5s linear infinite;
-}
-
-@keyframes drop {
-  0% {
-    transform: translateY(0vh);
-  }
-  75% {
-    transform: translateY(90vh);
-  }
-  100% {
-    transform: translateY(90vh);
-  }
-}
-
-.stem {
-  width: 1px;
-  height: 60%;
-  margin-left: 7px;
-  animation: stem 0.5s linear infinite;
-}
-
-@keyframes stem {
-  0% {
-    opacity: 1;
-  }
-  65% {
-    opacity: 0;
-  }
+body.back-row-toggle .rain.back-row {
+  display: block;
 }
 
 .drop {
@@ -118,6 +94,7 @@ footer {
   width: 1px;
   height: 60%;
   margin-left: 7px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25));
   animation: stem 0.5s linear infinite;
 }
 
@@ -145,6 +122,10 @@ footer {
   transform: scale(0);
   animation: splat 0.5s linear infinite;
   display: none;
+}
+
+body.splat-toggle .splat {
+  display: block;
 }
 
 @keyframes splat {
