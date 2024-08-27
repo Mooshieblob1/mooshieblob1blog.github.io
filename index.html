@@ -5,30 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mooshieblob</title>
     <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19">
   </head>
-<!DOCTYPE html>
-<html>
-  <head>    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mooshieblob</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body class="back-row-toggle splat-toggle">
-    <div class="clock" id="clock"></div>
-    <div class="social-links">
-      <h1 class=""text-3xl font-bold underline">Hello, World!</h1>
+  <body class="bg-[#02061a] text-white font-sans">
+    <div class="clock fixed top-2 left-2 text-[#FFCC00] text-[12.2px] font-[Trebuchet MS]" id="clock"></div>
+    <div class="social-links fixed inset-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center text-[120%] z-10 bg-[rgba(2,6,26,0.5)] rounded-lg p-2">
       <img src="assets/images/bloblogo.webp" alt="" style="height: 15vw; width: auto;">
       <div style="display: flex;
       justify-content: center;
       align-items: center;">
-        <a href="https://safe.aibooru.online/posts?tags=user%3ABlob" target="_blank">
+        <a href="https://safe.aibooru.online/posts?tags=user%3ABlob" target="_blank" class="text-[#FFCC00] no-underline transition-opacity duration-400 hover:opacity-60">
           <img src="assets/icons/aibooru.svg" alt="AIBooru">
         </a>
-        <a href="https://x.com/mooshieblob" target="_blank">
+        <a href="https://x.com/mooshieblob" target="_blank" class="text-[#FFCC00] no-underline transition-opacity duration-400 hover:opacity-60">
           <img src="assets/icons/x.svg" alt="X" style="height: 36px;">
         </a>
-        <a href="https://github.com/Mooshieblob1/" target="_blank">
+        <a href="https://github.com/Mooshieblob1/" target="_blank" class="text-[#FFCC00] no-underline transition-opacity duration-400 hover:opacity-60">
           <img src="assets/icons/github.svg" alt="Github">
         </a>
       </div>
@@ -36,11 +28,11 @@
     <div class="rain front-row"></div>
     <div class="rain back-row"></div>
     <img src="assets/images/bg.webp" id="bg_girl">
-    <footer>
-      <div class="footer-text">
+    <footer class="fixed bottom-0 left-0 w-full text-center text-white py-2">
+      <div class="footer-text flex items-center justify-center text-[#AEAEAE]">
         <span>&copy; 2024 Mooshieblob</span>
         <a href='https://iplocation.io/ipv6-compatibility-checker?url=referer' id="ipv6">
-          <img src='https://iplocation.io/images/ipv6-non-validated.svg' alt='ipv6 ready' title='ipv6 ready' border="0" padding="0" width="36" height="18" />
+          <img src='https://iplocation.io/images/ipv6-non-validated.svg' alt='ipv6 ready' title='ipv6 ready' border="0" padding="0" width="36" height="18" id="ipv6" class="h-[18px] ml-2">
         </a>
       </div>
     </footer>
