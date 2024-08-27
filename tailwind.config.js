@@ -6,7 +6,19 @@ module.exports = {
     "./assets/js/script.js", // Include the JS file
   ],
   theme: {
-    extend: {},
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px',
+    },
+    extend: {
+      backgroundImage: {
+        'hero-pattern': "url('/assets/images/bg.webp')",
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 };

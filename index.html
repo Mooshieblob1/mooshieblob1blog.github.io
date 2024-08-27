@@ -1,61 +1,112 @@
 <!doctype html>
-<html>
+<html class="h-full">
   <head>
+    <style>
+      body {
+        overflow-y: scroll;
+      }
+    </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mooshieblob</title>
     <link href="./dist/output.css" rel="stylesheet" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
     />
   </head>
-  <body class="bg-[#02061a] font-sans text-white">
-    <div
-      class="clock font-[Trebuchet MS] fixed left-2 top-2 text-[12.2px] text-[#FFCC00]"
-      id="clock"
-    ></div>
-    <div
-      class="social-links fixed inset-1/2 z-10 flex -translate-x-1/2 -translate-y-1/2 transform flex-col items-center justify-center rounded-lg bg-[rgba(2,6,26,0.5)] p-2 text-[120%]"
+  <body class="flex h-full flex-col bg-gray-700 font-sans text-white">
+    <nav
+      class="sticky top-0 z-10 bg-black backdrop-blur-lg backdrop-opacity-50 backdrop-filter"
     >
-      <img
-        src="assets/images/bloblogo.webp"
-        alt=""
-        style="height: 15vw; width: auto"
-      />
-      <div style="display: flex; justify-content: center; align-items: center">
-        <a
-          href="https://safe.aibooru.online/posts?tags=user%3ABlob"
-          target="_blank"
-          class="duration-400 text-[#FFCC00] no-underline transition-opacity hover:opacity-60"
-        >
-          <img src="assets/icons/aibooru.svg" alt="AIBooru" />
-        </a>
-        <a
-          href="https://x.com/mooshieblob"
-          target="_blank"
-          class="duration-400 text-[#FFCC00] no-underline transition-opacity hover:opacity-60"
-        >
-          <img src="assets/icons/x.svg" alt="X" style="height: 36px" />
-        </a>
-        <a
-          href="https://github.com/Mooshieblob1/"
-          target="_blank"
-          class="duration-400 text-[#FFCC00] no-underline transition-opacity hover:opacity-60"
-        >
-          <img src="assets/icons/github.svg" alt="Github" />
-        </a>
+      <div class="mx-auto max-w-5xl px-4">
+        <div class="flex h-16 items-center justify-between">
+          <span class="text-2xl font-semibold text-gray-900">
+            <img
+              src="assets/images/bloblogo.webp"
+              alt="Logo"
+              style="height: 5vh"
+            />
+          </span>
+          <div class="flex space-x-4 text-gray-200">
+            <a href="#">Blog</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
       </div>
+    </nav>
+    <img
+      src="assets/images/bg.webp"
+      id="bg_girl"
+      style="opacity: 0.05; height: 100vh; position: fixed; right: 0"
+      alt="A Mouse girl wearing a raincoat"
+    />
+    <div
+      class="scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 scrollbar-thumb-rounded-md fixed left-1/2 top-1/2 h-4/5 w-1/2 -translate-x-1/2 -translate-y-1/2 transform overflow-y-scroll rounded-lg bg-white bg-opacity-20 p-4"
+    >
+      <h1 class="mb-4 text-4xl font-bold">
+        The Curious Case of the Quantum Teapot
+      </h1>
+      <p class="mb-6 text-lg text-gray-300">
+        In the quaint town of Serendipity Springs, nestled between rolling hills
+        and babbling brooks, there existed an enigma that baffled both
+        scientists and tea enthusiasts alike. It was none other than the
+        legendary Quantum Teapot.
+      </p>
+      <h2 class="mb-4 text-2xl font-semibold">Origins and Properties</h2>
+      <p class="mb-6 text-gray-200">
+        The Quantum Teapot, as the locals affectionately called it, materialized
+        one foggy morning in Mrs. Pippinsworth's cozy kitchen. Mrs.
+        Pippinsworth, a retired botanist with a penchant for Earl Grey, had been
+        stirring her tea when she noticed a peculiar glimmer in her teapot. Upon
+        closer inspection, she gasped—the teapot was simultaneously full and
+        empty, its spout pointing both east and west. It defied the laws of
+        classical physics and, quite possibly, good taste.
+      </p>
+      <p class="mb-6 text-gray-200">
+        Scientists flocked to Serendipity Springs, armed with particle
+        accelerators and pocket protectors. They debated fervently over the
+        Quantum Teapot's quantumness. Was it a mere illusion, a glitch in the
+        cosmic code, or a clever marketing ploy by the local tea shop? The
+        debate raged on, fueled by copious cups of chamomile and wild
+        speculations.
+      </p>
+      <h2 class="mb-4 text-2xl font-semibold">The Tea Party Hypothesis</h2>
+      <p class="mb-6 text-gray-200">
+        Dr. Percival Whimsy, a theoretical physicist with a penchant for
+        whimsical bowties, proposed the Tea Party Hypothesis. According to his
+        calculations (scribbled on a napkin during high tea), the Quantum Teapot
+        was a gateway to alternate dimensions. When filled with Darjeeling, it
+        allowed one to sip tea with long-lost relatives, dinosaurs, and sentient
+        dandelions.
+      </p>
+      <p class="mb-6 text-gray-200">
+        Naturally, this led to the Great Serendipity Springs Tea Party, where
+        attendees donned top hats, monocles, and multidimensional cravats. They
+        sipped from the Quantum Teapot, exchanged pleasantries with parallel
+        selves, and debated the merits of scones versus muffins in the
+        multiverse.
+      </p>
+      <p class="mb-6 text-gray-200">
+        Alas, the Quantum Teapot remained elusive. It vanished as mysteriously
+        as it appeared, leaving behind only a faint aroma of bergamot and a
+        cryptic note: "Tea is the answer. Now, what was the question?"
+      </p>
+      <p class="mb-6 text-gray-200">
+        And so, dear reader, the legend of the Quantum Teapot lives on, steeped
+        in uncertainty and sprinkled with stardust. Whether you believe in its
+        existence or dismiss it as a delightful delusion, remember this:
+        Sometimes, the most extraordinary things hide in the ordinary.
+      </p>
     </div>
-    <div class="rain front-row"></div>
-    <div class="rain back-row"></div>
-    <img src="assets/images/bg.webp" id="bg_girl" />
     <footer class="fixed bottom-0 left-0 w-full py-2 text-center text-white">
       <div class="footer-text flex items-center justify-center text-[#AEAEAE]">
         <span>&copy; 2024 Mooshieblob</span>
         <a
           href="https://iplocation.io/ipv6-compatibility-checker?url=referer"
           id="ipv6"
+          class="ml-2"
         >
           <img
             src="https://iplocation.io/images/ipv6-non-validated.svg"
@@ -66,30 +117,11 @@
             width="36"
             height="18"
             id="ipv6"
-            class="ml-2 h-[18px]"
+            class="h-[18px]"
           />
         </a>
       </div>
     </footer>
-    <script>
-      function updateClock() {
-        var now = new Date();
-        var hours = now.getHours();
-        var minutes = now.getMinutes();
-        var seconds = now.getSeconds();
-        var timeString =
-          hours.toString().padStart(2, "0") +
-          ":" +
-          minutes.toString().padStart(2, "0") +
-          ":" +
-          seconds.toString().padStart(2, "0");
-        document.getElementById("clock").textContent = timeString;
-      }
-
-      updateClock(); // make the clock appear instantaneously
-
-      setInterval(updateClock, 1000);
-    </script>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
