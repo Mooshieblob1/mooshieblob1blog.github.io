@@ -1,0 +1,17 @@
+{
+  "name": "mooshieblob1blog.github.io",
+  "version": "1.0.0",
+  "description": "Welcome to my digital haven for all things data science! This README serves as a portal to explore my projects and delve into my skillset.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10"
+  }
+}
