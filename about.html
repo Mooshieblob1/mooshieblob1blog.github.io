@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="h-full" lang="en">
+  <head>
+    <style>
+      body {
+        overflow-y: scroll;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mooshieblob</title>
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+  </head>
+  <body class="flex h-full flex-col bg-gray-700 font-sans text-white">
+    <nav
+      class="sticky top-0 z-10 bg-gray-500 bg-opacity-20 backdrop-blur-lg backdrop-opacity-50 backdrop-filter"
+    >
+      <div class="mx-auto max-w-5xl px-4">
+        <div class="flex h-16 items-center justify-between">
+          <a href="https://mooshieblob.com">
+            <span class="text-2xl font-semibold text-gray-900">
+              <img
+                src="assets/images/bloblogo.webp"
+                alt="Logo"
+                style="height: 5vh"
+              />
+            </span>
+          </a>
+          <div class="flex space-x-4 text-gray-200">
+            <a href="index.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <img
+      src="assets/images/bg.webp"
+      id="bg_girl"
+      class="fixed right-0 h-screen w-auto object-contain opacity-5"
+      alt="A Mouse girl wearing a raincoat"
+    />
+
+    <div
+      class="scrollbar-thumb-rounded-md fixed left-1/2 top-1/2 h-4/5 w-4/5 -translate-x-1/2 -translate-y-1/2 transform overflow-y-scroll rounded-lg bg-white bg-opacity-20 p-4 scrollbar-thin scrollbar-track-gray-100 scrollbar-thumb-gray-300 md:w-1/2"
+    >
+      <h1 class="mb-4 text-center text-4xl font-bold">About Me</h1>
+      <p class="mb-6 text-lg text-gray-300">
+        Hi! I'm Mooshieblob, a writer and artist from the internet. I love to
+        create stories and illustrations that bring joy to people's lives. My
+        work is inspired by the whimsical and fantastical, and I hope to share
+        that magic with you through my blog.
+      </p>
+      <p class="mb-6 text-lg text-gray-300">
+        Thank you for visiting my website, and I hope you enjoy your stay!
+      </p>
+    </div>
+    <footer class="fixed bottom-0 left-0 w-full py-2 text-center text-white">
+      <div class="footer-text flex items-center justify-center text-[#AEAEAE]">
+        <span>&copy; 2024 Mooshieblob</span>
+        <a
+          href="https://iplocation.io/ipv6-compatibility-checker?url=referer"
+          id="ipv6"
+          class="ml-2"
+        >
+          <img
+            src="https://iplocation.io/images/ipv6-non-validated.svg"
+            alt="ipv6 ready"
+            title="ipv6 ready"
+            border="0"
+            padding="0"
+            width="36"
+            height="18"
+            id="ipv6"
+            class="h-[18px]"
+          />
+        </a>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
