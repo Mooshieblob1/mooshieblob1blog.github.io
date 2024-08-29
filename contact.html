@@ -8,7 +8,7 @@
     </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>Contact</title>
     <link href="./dist/output.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -44,21 +44,26 @@
       class="fixed right-0 h-screen w-auto object-contain opacity-5"
       alt="A Mouse girl wearing a raincoat"
     />
-
-    <div
-      class="scrollbar-thumb-rounded-md fixed left-1/2 top-1/2 h-4/5 w-4/5 -translate-x-1/2 -translate-y-1/2 transform overflow-y-scroll rounded-lg bg-white bg-opacity-20 p-4 scrollbar-thin scrollbar-track-gray-100 scrollbar-thumb-gray-300 md:w-1/2"
-    >
-      <h1 class="mb-4 text-center text-4xl font-bold">About Me</h1>
-      <p class="mb-6 text-lg text-gray-300">
-        Hi! I'm Mooshieblob, a writer and artist from the internet. I love to
-        create stories and illustrations that bring joy to people's lives. My
-        work is inspired by the whimsical and fantastical, and I hope to share
-        that magic with you through my blog.
-      </p>
-      <p class="mb-6 text-lg text-gray-300">
-        Thank you for visiting my website, and I hope you enjoy your stay!
-      </p>
-    </div>
+    <section class="flex-grow">
+        <div class="container mx-auto px-4 py-8">
+            <h1 class="text-3xl font-semibold mb-4">Contact Us</h1>
+            <form action="/submit-contact" method="POST">
+                <div class="mb-4">
+                    <label for="name" class="block mb-2">Name</label>
+                    <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block mb-2">Message</label>
+                    <textarea id="message" name="message" class="w-full px-4 py-2 border border-gray-300 rounded"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
+            </form>
+        </div>
+    </section>
     <footer class="fixed bottom-0 left-0 w-full py-2 text-center text-white">
       <div class="footer-text flex items-center justify-center text-[#AEAEAE]">
         <span>&copy; 2024 Mooshieblob</span>
